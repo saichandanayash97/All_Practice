@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication"
+    android:installLocation="auto"
+    android:versionCode="30"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permission to write on the sdcard (for caching)-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--  Permission to use GPS/Network positionning -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Permission to test the state of the network -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!--  Invitation des contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true" >
+    </supports-screens>
+
+    <application
+        android:name=".MainActivity"
+        android:label="@string/MyApplication"
+        android:theme="@android:style/Theme.NoTitleBar"
+        tools:ignore="Instantiatable">
+
+        <!--  To use google maps -->
+        <uses-library android:name="com.google.android.maps" />
+
+
+    </application>
+</manifest>
