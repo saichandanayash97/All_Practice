@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val rcView = findViewById(R.id.rcv1) as RecyclerView
+        /* setContentView(R.layout.activity_main)
+        /val rcView = findViewById(R.id.rcv1) as RecyclerView
 
         /* val ms = ArrayList<Movies>()
 
@@ -30,5 +30,6 @@ class MainActivity : AppCompatActivity() {
     private fun showMovies(movies: List<Movies>){
         rcView.layoutManager = LinearLayoutManager(this,RecyclerView.VERTICAL,false)
         rcView.adapter = MoviesAdapter()
+    }*/
     }
 }
